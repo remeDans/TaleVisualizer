@@ -55,11 +55,15 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
                 layout.Orientation = Orientation.Vertical;
                 layout.SetGravity(GravityFlags.Center);
 
+                
+                
+
                 for (int i = 0; i < items.Count; i++)
                 {
                     var layoutH = new LinearLayout(this);
                     layoutH.SetGravity(GravityFlags.Center);
                     layoutH.SetBackgroundColor(Color.ParseColor("#fffff0"));
+                    
 
                     btnTales = new Button(this);
                     string nameArchiveAbsolutePath = items[i];
@@ -70,6 +74,7 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
                     btnTales.SetTypeface(null, TypefaceStyle.Bold);
                     btnTales.SetTextColor(Color.ParseColor("#000000"));
                     btnTales.Id = i;
+                    
                     
 
                     btnDelete = new Button(this);
@@ -83,6 +88,7 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
                     layoutH.AddView(btnTales);
                     layoutH.AddView(btnDelete);
                     layout.AddView(layoutH);
+                    
 
                     btnTales.Click += BtnTales_Click;
                     btnDelete.Click += BtnDelete_Click;

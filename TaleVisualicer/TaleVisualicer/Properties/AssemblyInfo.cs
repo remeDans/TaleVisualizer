@@ -9,12 +9,13 @@ using Android.App;
 [assembly: AssemblyTitle("TaleVisualicer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("dansca_entertainment")]
 [assembly: AssemblyProduct("TaleVisualicer")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
+[assembly: Application(Icon = "@drawable/icon")]
 
 // Version information for an assembly consists of the following four values:
 //

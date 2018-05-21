@@ -26,9 +26,10 @@
             android:layout_height="fill_parent"
             android:gravity="center"
             android:paddingTop="30dp"
-            android:text="Cuentos precargados"
-            android:textColor="#17202A"
-            android:textSize="20dp" />
+            android:text="CUENTOS PRECARGADOS"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
     </FrameLayout>
     <FrameLayout
         android:id="@+id/frmLytStart"
@@ -42,21 +43,23 @@
             android:id="@+id/imgAddTales"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_orange_light" />
+            android:background="@android:color/holo_green_light" />
         <TextView
             android:id="@+id/lbl"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center"
             android:paddingTop="30dp"
-            android:text="Añadir cuento ..."
-            android:textColor="#17202A"
-            android:textSize="20dp" />
+            android:text="AÑADIR CUENTO"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
     </FrameLayout>
     <FrameLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:visibility="visible"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light">
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
             android:layout_width="fill_parent"
