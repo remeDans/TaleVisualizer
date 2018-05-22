@@ -16,7 +16,7 @@ using Android;
 namespace TaleVisualicer
 {
     [Activity(Label = "ListTale", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
-    ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
+    ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]//,NoHistory =true
     public class ActivityListTale : Activity
     {
         Button btnTales;
@@ -171,7 +171,8 @@ namespace TaleVisualicer
 
         public override void OnBackPressed()
         {
-            base.OnBackPressed();
+            var intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
         }
 
         #region opciones_inicio

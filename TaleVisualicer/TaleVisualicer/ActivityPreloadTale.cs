@@ -20,7 +20,7 @@ namespace TaleVisualicer
 {
 
     [Activity(Label = "ActivityPreloadTale", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
-ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
+ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]//, NoHistory = true
     public class ActivityPreloadTale : Activity
     {
         Button btnTales;

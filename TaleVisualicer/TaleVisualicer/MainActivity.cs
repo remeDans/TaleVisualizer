@@ -14,7 +14,7 @@ namespace TaleVisualicer
 {
 
     [Activity(Label = "ApplicationName",  ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
-ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]//
+ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", NoHistory = true) ]//
     public class MainActivity : AppCompatActivity
     {
 
@@ -28,6 +28,9 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
+
+
+           
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
@@ -46,6 +49,7 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
                 .AddTestDevice(AdRequest.DeviceIdEmulator)
                 .Build();
             mAdView.LoadAd(adRequest);
+
 
             
 
@@ -157,6 +161,11 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
         }*/
         #endregion opciones_inicio
 
+        //Desactivado el botón Back
+        public override void OnBackPressed()
+        {
+            return;
+        }
 
         #region ADS
         /*protected void RequestNewInterstitial()

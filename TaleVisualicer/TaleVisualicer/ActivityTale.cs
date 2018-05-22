@@ -22,7 +22,7 @@ using TestingEditor;
 namespace TaleVisualicer
 {
     [Activity(Label = "ActivityTale", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
-ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
+ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", NoHistory = true)]
     public class ActivityTale : Activity
     {
 
