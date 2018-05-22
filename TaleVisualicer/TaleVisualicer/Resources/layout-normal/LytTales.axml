@@ -6,6 +6,7 @@
     android:background="#CFCFC4"
     android:padding="0.0dp"
     android:layout_margin="0.0dp">
+<!--Esto corresponde a una tablet de 10 pulgadas-->
     <LinearLayout
         android:visibility="gone"
         android:id="@+id/gridView2"
@@ -47,7 +48,7 @@
             android:paddingTop="30dp"
             android:text="Título"
             android:textColor="#17202A"
-            android:textSize="16dp" />
+            android:textSize="24dp" />
     </FrameLayout>
     <FrameLayout
         android:id="@+id/frmLytPage"
@@ -83,7 +84,8 @@
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="30dp" />
+                    android:minHeight="30dp">
+                </TableRow>
                 <TableRow
                     android:id="@+id/Cabecera"
                     android:layout_width="fill_parent"
@@ -97,8 +99,8 @@
                         android:layout_marginRight="10dp">
                         <ImageView
                             android:id="@+id/imgPic1"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
                             android:layout_marginRight="0.0dp"
                             android:padding="2dp"
                             android:scaleType="centerCrop" />
@@ -238,7 +240,8 @@
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="20dp" />
+                    android:minHeight="20dp">
+                </TableRow>
                 <TableRow
                     android:id="@+id/Cabecera"
                     android:layout_width="fill_parent"
@@ -397,7 +400,8 @@
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="30dp" />
+                    android:minHeight="30dp">
+                </TableRow>
             </TableLayout>
         </LinearLayout>
     </FrameLayout>
