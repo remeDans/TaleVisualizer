@@ -6,6 +6,7 @@
     android:background="#CFCFC4"
     android:padding="0.0dp"
     android:layout_margin="0.0dp">
+	<!-- 10 PULGADAS MAS O MENOS -->
     <LinearLayout
         android:visibility="gone"
         android:id="@+id/gridView2"
@@ -83,7 +84,8 @@
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="30dp" />
+                    android:minHeight="30dp">
+                </TableRow>
                 <TableRow
                     android:id="@+id/Cabecera"
                     android:layout_width="fill_parent"
@@ -238,7 +240,8 @@
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="20dp" />
+                    android:minHeight="40dp">
+                </TableRow>
                 <TableRow
                     android:id="@+id/Cabecera"
                     android:layout_width="fill_parent"
@@ -282,9 +285,9 @@
                         android:layout_marginRight="0dp">
                         <ImageView
                             android:id="@+id/imgPic8"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginRight="0.0dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="30.0dp"
                             android:padding="2dp"
                             android:scaleType="centerCrop" />
                     </RelativeLayout>
@@ -297,9 +300,9 @@
                         android:layout_marginRight="10dp">
                         <ImageView
                             android:id="@+id/imgPic9"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginRight="0.0dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="30.0dp"
                             android:padding="2dp"
                             android:scaleType="centerCrop" />
                     </RelativeLayout>
@@ -312,8 +315,8 @@
                         android:layout_marginRight="10dp">
                         <ImageView
                             android:id="@+id/imgPic10"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
                             android:layout_marginRight="0.0dp"
                             android:padding="2dp"
                             android:scaleType="centerCrop" />
@@ -334,8 +337,8 @@
                         android:gravity="center"
                         android:inputType="textMultiLine"
                         android:singleLine="false"
-                        android:width="80dp"
-                        android:textSize="14dp" />
+                        android:width="150dp"
+                        android:textSize="18dp" />
                     <TextView
                         android:id="@+id/txtWordPic7"
                         android:text="Name"
@@ -348,8 +351,8 @@
                         android:gravity="center"
                         android:inputType="textMultiLine"
                         android:singleLine="false"
-                        android:width="80dp"
-                        android:textSize="14dp" />
+                        android:width="150dp"
+                        android:textSize="18dp" />
                     <TextView
                         android:id="@+id/txtWordPic8"
                         android:text="Name"
@@ -362,8 +365,8 @@
                         android:gravity="center"
                         android:inputType="textMultiLine"
                         android:singleLine="false"
-                        android:width="80dp"
-                        android:textSize="14dp" />
+                        android:width="150dp"
+                        android:textSize="18dp" />
                     <TextView
                         android:id="@+id/txtWordPic9"
                         android:text="Name"
@@ -376,8 +379,8 @@
                         android:gravity="center"
                         android:inputType="textMultiLine"
                         android:singleLine="false"
-                        android:width="80dp"
-                        android:textSize="14dp" />
+                        android:width="150dp"
+                        android:textSize="18dp" />
                     <TextView
                         android:id="@+id/txtWordPic10"
                         android:text="Name"
@@ -390,14 +393,15 @@
                         android:gravity="center"
                         android:inputType="textMultiLine"
                         android:singleLine="false"
-                        android:width="80dp"
-                        android:textSize="14dp" />
+                        android:width="150dp"
+                        android:textSize="18dp" />
                 </TableRow>
                 <TableRow
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="30dp" />
+                    android:minHeight="30dp">
+                </TableRow>
             </TableLayout>
         </LinearLayout>
     </FrameLayout>
