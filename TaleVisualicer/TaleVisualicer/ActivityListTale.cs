@@ -175,6 +175,13 @@ namespace TaleVisualicer
             StartActivity(intent);
         }
 
+        protected override void OnResume()
+        {
+            this.RequestedOrientation = ScreenOrientation.Landscape;
+            base.OnResume();
+            this.RequestedOrientation = ScreenOrientation.Landscape;
+        }
+
         #region opciones_inicio
         /*private void visibilityListener(object sender, Android.Views.View.SystemUiVisibilityChangeEventArgs e)
         {

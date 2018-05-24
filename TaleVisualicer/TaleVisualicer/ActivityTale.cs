@@ -310,6 +310,13 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             base.OnPause();
         }
 
+        protected override void OnResume()
+        {
+            this.RequestedOrientation = ScreenOrientation.Landscape;
+            base.OnResume();
+            this.RequestedOrientation = ScreenOrientation.Landscape;
+        }
+
 
         protected override void OnStart()
         {
@@ -333,8 +340,9 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
                     }
                 }
             }
-
+            this.RequestedOrientation = ScreenOrientation.Landscape;
             base.OnStart();
+            this.RequestedOrientation = ScreenOrientation.Landscape;
         }
 
 

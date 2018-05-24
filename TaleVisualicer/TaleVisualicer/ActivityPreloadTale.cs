@@ -34,7 +34,9 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
 
         protected override void OnResume()
         {
+            this.RequestedOrientation = ScreenOrientation.Landscape;
             base.OnResume();
+            this.RequestedOrientation = ScreenOrientation.Landscape;
         }
         protected override void OnCreate(Bundle savedInstanceState)
         {

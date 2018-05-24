@@ -20,7 +20,9 @@ ScreenOrientation = ScreenOrientation.Landscape, Icon = "@mipmap/icon")]
         // Launches the startup task
         protected override void OnResume()
         {
+            this.RequestedOrientation = ScreenOrientation.Landscape;
             base.OnResume();
+            this.RequestedOrientation = ScreenOrientation.Landscape;
             Task startupWork = new Task(() => { SimulateStartup(); });
             startupWork.Start();
         }

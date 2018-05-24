@@ -29,8 +29,8 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
 
+            this.RequestedOrientation = ScreenOrientation.Landscape;
 
-           
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
@@ -186,16 +186,54 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
 
         protected override void OnResume()
         {
+
+            this.RequestedOrientation = ScreenOrientation.Landscape;
             base.OnResume();
+            this.RequestedOrientation = ScreenOrientation.Landscape;
             if (mAdView != null)
             {
                 mAdView.Resume();
             }
+
+           
+
             /*if (!mInterstitialAd.IsLoaded)
             {
                 RequestNewInterstitial();
             }*/
         }
+
+
+
+        protected override void OnRestart()
+        {
+            this.RequestedOrientation = ScreenOrientation.Landscape;
+            base.OnRestart();
+            this.RequestedOrientation = ScreenOrientation.Landscape;
+        }
+
+
+       /* protected override void OnRestoreInstanceState(Bundle savedInstanceState)
+        {
+
+            base.OnRestoreInstanceState(savedInstanceState);
+            this.RequestedOrientation = ScreenOrientation.Landscape;
+
+            
+        }*/
+
+
+        
+        
+
+
+        /*protected override void OnStart()
+        {
+            
+
+            base.OnStart();
+            this.RequestedOrientation = ScreenOrientation.Landscape;
+        }*/
 
         protected override void OnDestroy()
         {
