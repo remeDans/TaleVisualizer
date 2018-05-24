@@ -25,8 +25,6 @@ namespace TaleVisualicer
 ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", NoHistory = true)]
     public class ActivityTale : Activity
     {
-
-
         List<ImageView> images;
         List<TextView> textBlocksWord;
         List<RelativeLayout> borders;

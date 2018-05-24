@@ -9,7 +9,7 @@ using Android.Util;
 namespace TaleVisualicer
 {
     [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
-ScreenOrientation = ScreenOrientation.Landscape, Icon = "@drawable/icon")]
+ScreenOrientation = ScreenOrientation.Landscape, Icon = "@mipmap/icon")]
     public class SplashActivity : AppCompatActivity
     {
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
