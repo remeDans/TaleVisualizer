@@ -58,11 +58,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             // Create your application here
             SetContentView(Resource.Layout.LytTales);
 
-            //SIN barra de navvegación y title bar
-            /*int uiOptions = (int)SystemUiFlags.HideNavigation | (int)SystemUiFlags.ImmersiveSticky;
-            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
-            Window.DecorView.SystemUiVisibilityChange += visibilityListener;*/
-
             lblFrontPage = FindViewById<TextView>(Resource.Id.lblFrontPage);
             btnPreviousPage = FindViewById<Button>(Resource.Id.btnPreviousPage);
             btnNextPage = FindViewById<Button>(Resource.Id.btnNextPage);
@@ -235,7 +230,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
                 else
                 {
                     UpdatePageAndroidGUI();
-                    //UpdatePageAndroidGUI2();
                     ShowPageGUI();
                 }
             }
@@ -349,7 +343,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
         private void UpdateTaleAndroidGUI()
         {
             mediaPlayerTale.Stop();
-            //mediaPlayerTale.Dispose();
 
             frmLytFrontPage.SetBackgroundColor(Color.WhiteSmoke);
             frmLytFrontPage.SetBackgroundResource(0);
@@ -391,7 +384,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
         private void UpdatePageAndroidGUI()
         {
             mediaPlayerTale.Stop();
-            //mediaPlayerTale.Dispose();
 
             frmLytPage.SetBackgroundColor(Color.WhiteSmoke);
             imgBackgroundPage.SetImageBitmap(null);
@@ -449,94 +441,14 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
                     images[i].SetImageBitmap(bit);
                     
                     EditBorderAndroid(borders[i], pictogram.getColorByType(pictogram.Type), images[i], 10);
-                    
                 }
-
-                
             }
 
             Application.Dispose();
             Application.OnTrimMemory(TrimMemory.RunningCritical);
         }
 
-        private void UpdatePageAndroidGUI2()
-        {
-            mediaPlayerTale.Stop();
 
-            frmLytPage.SetBackgroundColor(Color.WhiteSmoke);
-            imgBackgroundPage.SetImageBitmap(null);
-
-            for (int i = 0; i < 10; i++)
-            {
-                textBlocksWord[i].Text = "";
-                images[i].SetImageResource(0);
-                borders[i].SetBackgroundColor(Color.Transparent);
-            }
-
-            //-- Background
-            TestingEditor.Page auxPage = taleManager.CurrentPage;
-
-            if (auxPage.Background != "")
-            {
-                String background = auxPage.Background;
-                int tamBackground = background.Length;
-                if (tamBackground > 0)
-                {
-                    String p = background.Substring(tamBackground - 4);
-                    UtilsImageAndroid.SetImage(background, imgBackgroundFrontPage);
-
-                    if (p.Contains("."))
-                    {
-                        UtilsImageAndroid.SetImage(background, imgBackgroundPage);
-                    }
-
-                    if (background.Contains("#"))
-                    {
-                        frmLytPage.SetBackgroundColor(Color.ParseColor(background));
-                    }
-                }
-            }
-
-            if (auxPage.Music != "")
-            {
-                mediaPlayerTale = MediaPlayer.Create(this, Android.Net.Uri.Parse(auxPage.Music));
-                mediaPlayerTale.Start();
-            }
-
-            
-
-            
-
-            //-- PICTOGRAMAS ----
-
-            /*foreach (Pictogram pictogram in auxPage.Pictograms)
-            {
-                int i = pictogram.Index;
-                borders[i].Visibility = ViewStates.Gone;
-                textBlocksWord[i].Visibility = ViewStates.Gone;
-            }
-
-            foreach (Pictogram pictogram in auxPage.Pictograms)
-            {
-                
-
-                int i = pictogram.Index;
-
-                textBlocksWord[i].Text = pictogram.TextToRead;
-
-                string path = pictogram.ImageName;
-
-                borders[i].Visibility = ViewStates.Visible;
-                textBlocksWord[i].Visibility = ViewStates.Visible;
-
-                if (path != "")
-                {
-                    Bitmap bit = BitmapFactory.DecodeFile(path);
-                    images[i].SetImageBitmap(bit);
-                    EditBorder(borders[i], pictogram.getColorByType(pictogram.Type), images[i], 10);
-                }
-            }*/
-        }
 
         private void EditBorderAndroid(RelativeLayout border, Color color, ImageView img, int borderSize)
         {
@@ -623,8 +535,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
                 }
             }
         }
-
-    
 
         #region LogStoreAndroid
 

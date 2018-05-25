@@ -16,7 +16,7 @@ using Android;
 namespace TaleVisualicer
 {
     [Activity(Label = "ListTale", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
-    ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]//,NoHistory =true
+    ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
     public class ActivityListTale : Activity
     {
         Button btnTales;
@@ -26,11 +26,6 @@ namespace TaleVisualicer
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            //SIN barra de navvegación y title bar
-           /* int uiOptions = (int)SystemUiFlags.HideNavigation | (int)SystemUiFlags.ImmersiveSticky;
-            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
-            Window.DecorView.SystemUiVisibilityChange += visibilityListener;*/
 
             pathTale = "";
 
@@ -87,9 +82,6 @@ namespace TaleVisualicer
 
             if (!Directory.Exists(documentsPath + "/" + nameArchive))
             {
-                /*AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                alert.SetTitle("Cargando...");
-                alert.Show();*/
 
                 File.Copy(nameArchiveAbsolutePath, System.IO.Path.Combine(documentsPath, nameArchiveWithExtension));
            
@@ -136,9 +128,6 @@ namespace TaleVisualicer
 
             if (!Directory.Exists(documentsPath + "/" + nameArchive))
             {
-                /*AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                alert.SetTitle("Cargando...");
-                alert.Show();*/
 
                 File.Copy(nameArchiveAbsolutePath, System.IO.Path.Combine(documentsPath, nameArchiveWithExtension));
                 File.Copy(System.IO.Path.Combine(documentsPath, nameArchiveWithExtension), System.IO.Path.Combine(documentsPath, nameArchive + ".zip"));
@@ -181,40 +170,6 @@ namespace TaleVisualicer
             base.OnResume();
             this.RequestedOrientation = ScreenOrientation.Landscape;
         }
-
-        #region opciones_inicio
-        /*private void visibilityListener(object sender, Android.Views.View.SystemUiVisibilityChangeEventArgs e)
-        {
-            var newUiOptions = (int)e.Visibility;
-            newUiOptions |= (int)SystemUiFlags.LayoutStable;
-            newUiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
-            newUiOptions |= (int)SystemUiFlags.LayoutFullscreen;
-            newUiOptions |= (int)SystemUiFlags.HideNavigation;
-            newUiOptions |= (int)SystemUiFlags.Fullscreen;
-            newUiOptions |= (int)SystemUiFlags.ImmersiveSticky;
-
-            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)newUiOptions;
-        }
-        public override void OnWindowFocusChanged(bool hasFocus)
-        {
-            base.OnWindowFocusChanged(hasFocus);
-
-            int uiOptions = (int)Window.DecorView.SystemUiVisibility;
-
-            Window.SetFlags(WindowManagerFlags.Fullscreen, WindowManagerFlags.Fullscreen);
-
-            uiOptions |= (int)SystemUiFlags.LayoutStable;
-            uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
-            uiOptions |= (int)SystemUiFlags.LayoutFullscreen;
-            uiOptions |= (int)SystemUiFlags.HideNavigation;
-            uiOptions |= (int)SystemUiFlags.Fullscreen;
-            uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
-
-            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
-        }*/
-        #endregion opciones_inicio
-
-
 
     }
 }
