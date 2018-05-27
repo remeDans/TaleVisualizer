@@ -77,6 +77,7 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
                 }
 
                 SetContentView(layout);
+
             }
             else
             {

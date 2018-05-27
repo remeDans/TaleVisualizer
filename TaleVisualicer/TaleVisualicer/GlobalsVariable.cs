@@ -15,11 +15,11 @@ namespace TaleVisualicer
 {
 
     /*[Application(Debuggable = true)]*/
-    public class GlobalsVariable : Application
+    public static class GlobalsVariable //: Application
     {
-       public string myString = "";
+      
 
-        public GlobalsVariable(IntPtr handle, JniHandleOwnership transfer)
+        /*public GlobalsVariable(IntPtr handle, JniHandleOwnership transfer)
                     : base(handle, transfer)
         {
         }
@@ -28,8 +28,15 @@ namespace TaleVisualicer
             myString = "Hello World";
             base.OnCreate();
 
-        }
-        
+        }*/
+
+        public static int count = 0;
+
+
+
        
+
+
+
     }
 }

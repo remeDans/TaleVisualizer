@@ -26,6 +26,7 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
 
         public bool startApp;
         int countMainActivity;
+        public String m;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -54,26 +55,18 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             imgPreloadTale.Click += ImgPreloadTale_Click;
 
 
-            //INTENTO DE HACER VARIABLES GLOBALES
-            //--------------------------------------
+            // VARIABLES GLOBALES
+            //-------------------
 
-            /*if(countMainActivity==0)
+            if(GlobalsVariable.count== 0)
             {
                 Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
                 alert.SetTitle("Tutorial");
                 alert.SetMessage("Los cuentos se encuentran en taleeditor.wordpress.com y se tienen que guardar en la carpeta 'Downloads' ");
                 alert.Show();
-            }*/
+            }
 
-            //string stringFromApplicationClass = ((GlobalsVariable)this.Application).myString;//This will contain "Hello World"
-            //((GlobalsVariable)this.Application).myString = "Changed from the activity";// now the value is set to a new value.
-
-            /*Android.App.AlertDialog.Builder alert1 = new Android.App.AlertDialog.Builder(this);
-            alert1.SetTitle(((GlobalsVariable)this.Application).myString);
-            
-            alert1.Show();
-
-            countMainActivity++;*/
+            GlobalsVariable.count++;
         }
 
 

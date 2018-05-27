@@ -13,7 +13,7 @@
                android:icon="@mipmap/icon"
                android:configChanges="orientation"
                android:screenOrientation="landscape" >
-  <!--android:name ="com.TaleVisualicer.GlobalsVariable"--> 
+  
 		<activity android:name="com.google.android.gms.ads.AdActivity"
               android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
               android:theme="@android:style/Theme.Translucent" />
