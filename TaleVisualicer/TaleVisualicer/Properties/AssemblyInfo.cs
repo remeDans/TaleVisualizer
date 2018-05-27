@@ -15,7 +15,11 @@ using Android.App;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
-[assembly: Application(Icon = "@mipmap/icon")]
+[assembly: Application(
+    Icon = "@mipmap/icon"/*,
+        Debuggable = true,
+        Label = "insert label here",
+        ManageSpaceActivity = typeof(TaleVisualicer.GlobalsVariable)*/)]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,3 +33,5 @@ using Android.App;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+

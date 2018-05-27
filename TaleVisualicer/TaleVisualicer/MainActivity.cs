@@ -9,6 +9,7 @@ using Android.Content;
 using Android.Support.V7.App;
 using Android.Gms.Ads;
 using TaleVisualicer;
+using System;
 
 namespace TaleVisualicer
 {
@@ -23,13 +24,17 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
         protected InterstitialAd mInterstitialAd;
         protected AdView mAdView;
 
+        public bool startApp;
+        int countMainActivity;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
 
-            this.RequestedOrientation = ScreenOrientation.Landscape;
+            countMainActivity = 0;
 
+            this.RequestedOrientation = ScreenOrientation.Landscape;
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
@@ -41,13 +46,34 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
                 .Build();
             mAdView.LoadAd(adRequest);
             //----------- END ADS ------------
-            
 
             imgAdd = FindViewById<ImageButton>(Resource.Id.imgAddTales);
             imgPreloadTale = FindViewById<ImageButton>(Resource.Id.imgPreloadTale);
 
             imgAdd.Click += ImgAdd_Click;
             imgPreloadTale.Click += ImgPreloadTale_Click;
+
+
+            //INTENTO DE HACER VARIABLES GLOBALES
+            //--------------------------------------
+
+            /*if(countMainActivity==0)
+            {
+                Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
+                alert.SetTitle("Tutorial");
+                alert.SetMessage("Los cuentos se encuentran en taleeditor.wordpress.com y se tienen que guardar en la carpeta 'Downloads' ");
+                alert.Show();
+            }*/
+
+            //string stringFromApplicationClass = ((GlobalsVariable)this.Application).myString;//This will contain "Hello World"
+            //((GlobalsVariable)this.Application).myString = "Changed from the activity";// now the value is set to a new value.
+
+            /*Android.App.AlertDialog.Builder alert1 = new Android.App.AlertDialog.Builder(this);
+            alert1.SetTitle(((GlobalsVariable)this.Application).myString);
+            
+            alert1.Show();
+
+            countMainActivity++;*/
         }
 
 
@@ -63,7 +89,8 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
                 if(dir.Length==0)
                 {
                     Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
-                    alert.SetTitle("No hay cuentos precargados");
+                    alert.SetTitle("Advertencia");
+                    alert.SetMessage("No hay cuentos precargados");
                     alert.Show();
                 }
                 else
@@ -77,7 +104,8 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             else
             {
                 Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
-                alert.SetTitle("No hay cuentos precargados");
+                alert.SetTitle("Advertencia");
+                alert.SetMessage("No hay cuentos precargados");
                 alert.Show();
             }
         }
@@ -93,7 +121,8 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             if (numFiles == 0)
             {
                 Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
-                alert.SetTitle("No hay archivos con la extensión *.tale");
+                alert.SetTitle("Advertencia");
+                alert.SetMessage("No hay archivos con la extensión *.tale");
                 alert.Show();
             }
             else

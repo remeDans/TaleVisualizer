@@ -81,7 +81,8 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
             else
             {
                 AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                alert.SetTitle("No hay cuentos precargados");
+                alert.SetTitle("Advertencia");
+                alert.SetMessage("No hay cuentos precargados");
                 alert.Show();
 
                 SetContentView(Resource.Layout.Main);
@@ -124,6 +125,8 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
 
             //pathTale = Android.OS.Environment.ExternalStorageDirectory + "/Download" + "/VS" + "/" + nameArchive;
             pathTale = this.ApplicationInfo.DataDir + "/files" + "/VS" + "/" + nameArchive;
+
+            
 
             var intent = new Intent(this, typeof(ActivityTale));
             intent.PutExtra("path", JsonConvert.SerializeObject(pathTale));

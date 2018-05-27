@@ -107,7 +107,8 @@ namespace TaleVisualicer
             else
             {
                 AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                alert.SetTitle("Este cuento está precargado");
+                alert.SetTitle("Advertencia");
+                alert.SetMessage("Este cuento está precargado");
                 alert.Show();
             }
         }

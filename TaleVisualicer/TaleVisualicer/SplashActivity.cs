@@ -34,7 +34,10 @@ ScreenOrientation = ScreenOrientation.Landscape, Icon = "@mipmap/icon")]
         async void SimulateStartup ()
         {
             await Task.Delay(2000); // Simulate a bit of startup work.
+
             StartActivity(new Intent(Application.Context, typeof (MainActivity)));
+
+
         }
     }
 }
