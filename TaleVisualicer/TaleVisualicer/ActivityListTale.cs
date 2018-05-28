@@ -31,15 +31,21 @@ namespace TaleVisualicer
 
             items = JsonConvert.DeserializeObject<List<string>>(Intent.GetStringExtra("files"));
 
-            var layout = new LinearLayout(this);
+            //Establecemos el layout main
+            SetContentView(Resource.Layout.listTale);
+
+            //Obtenemos el linear layout donde colocar los botones
+            LinearLayout llBotonera = FindViewById<LinearLayout>(Resource.Id.llBotonera);
+            llBotonera.SetBackgroundColor(Color.AntiqueWhite);
+
+            //Creamos las propiedades de layout que tendrán los botones.
+            //Son LinearLayout.LayoutParams porque los botones van a estar en un LinearLayout.
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+            lp.SetMargins(5, 5, 5, 5);
+            
 
             for (int i = 0; i < items.Count; i++)
             {
-                var layoutH = new FrameLayout(this);
-                layout.SetGravity(GravityFlags.Center);
-                layout.Orientation = Android.Widget.Orientation.Vertical;
-                layout.SetBackgroundColor(Color.ParseColor("#fffff0"));
-
                 btnTales = new Button(this);
                 btnTales.Text = items[i];
                 btnTales.SetPadding(20, 20, 20, 20);
@@ -47,14 +53,17 @@ namespace TaleVisualicer
                 btnTales.SetTypeface(null, Android.Graphics.TypefaceStyle.Bold);
                 btnTales.SetTextColor(Color.ParseColor("#000000"));
 
-                layoutH.AddView(btnTales);
-                layout.AddView(layoutH);
+                //Asignamos propiedades de layout al boton
+                btnTales.LayoutParameters=lp;
+                //Añadimos el botón a la botonera
+                llBotonera.AddView(btnTales);
 
                 btnTales.Click += BtnTales_Click;
             }
 
-            SetContentView(layout);
         }
+
+
 
         private void BtnTales_Click(object sender, EventArgs e)
         {
@@ -173,4 +182,6 @@ namespace TaleVisualicer
         }
 
     }
+
+
 }
