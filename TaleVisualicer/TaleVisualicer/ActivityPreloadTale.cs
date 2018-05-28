@@ -37,63 +37,107 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
             pathTale = "";
          
             items = JsonConvert.DeserializeObject<List<string>>(Intent.GetStringExtra("dir"));
+            
 
-            //Establecemos el layout main
-            SetContentView(Resource.Layout.preloadTale);
-
-            if (items.Count() != 0)
+            if (items.Count() >= 0)
             {
-
-                //Obtenemos el linear layout donde colocar los botones
-                LinearLayout llBotonera = FindViewById<LinearLayout>(Resource.Id.llBotonera2);
-                //llBotonera.SetBackgroundColor(Color.AntiqueWhite);
-                llBotonera.SetGravity(GravityFlags.Center);
-
-
-                //Creamos las propiedades de layout que tendrán los botones.
-                //Son LinearLayout.LayoutParams porque los botones van a estar en un LinearLayout.
-                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
-                lp.SetMargins(5, 5, 5, 5);
-                lp.Gravity = GravityFlags.CenterVertical;
-
-
-
-                for (int i = 0; i < items.Count; i++)
+                if(items.Count() <= 7)
                 {
-                    var layoutH = new LinearLayout(this);
-                    layoutH.SetGravity(GravityFlags.Center);
-                    layoutH.SetBackgroundColor(Color.ParseColor("#fffff0"));
-                    
-                    btnTales = new Button(this);
-                    string nameArchiveAbsolutePath = items[i];
-                    nameArchiveClick = UtilsAndroid.ChangeToRelativePath(nameArchiveAbsolutePath);
-                    btnTales.Text = nameArchiveClick;
-                    btnTales.SetPadding(20, 20, 20, 20);
-                    btnTales.SetTextSize(Android.Util.ComplexUnitType.Sp, 18);
-                    btnTales.SetTypeface(null, TypefaceStyle.Bold);
-                    btnTales.SetTextColor(Color.ParseColor("#000000"));
-                    btnTales.Id = i;
-                    
-                    btnDelete = new Button(this);
-                    btnDelete.Text = "Eliminar";
-                    btnDelete.SetPadding(20, 20, 20, 20);
-                    btnDelete.SetTextSize(Android.Util.ComplexUnitType.Sp, 18);
-                    btnDelete.SetTypeface(null, TypefaceStyle.Bold);
-                    btnTales.SetTextColor(Color.ParseColor("#000000"));
-                    btnDelete.Id = i;
+                    var layout = new LinearLayout(this);
+                    layout.Orientation = Orientation.Vertical;
+                    layout.SetGravity(GravityFlags.Center);
 
-                    layoutH.AddView(btnTales);
-                    layoutH.AddView(btnDelete);
+                    for (int i = 0; i < items.Count; i++)
+                    {
+                        var layoutH = new LinearLayout(this);
+                        layoutH.SetGravity(GravityFlags.Center);
+                        layoutH.SetBackgroundColor(Color.ParseColor("#fffff0"));
+                        layoutH.SetPadding(5, 5, 5, 5);
+
+                        btnTales = new Button(this);
+                        string nameArchiveAbsolutePath = items[i];
+                        nameArchiveClick = UtilsAndroid.ChangeToRelativePath(nameArchiveAbsolutePath);
+                        btnTales.Text = nameArchiveClick;
+                        btnTales.SetPadding(20, 20, 20, 20);
+                        btnTales.SetTextSize(Android.Util.ComplexUnitType.Sp, 18);
+                        btnTales.SetTypeface(null, TypefaceStyle.Bold);
+                        btnTales.SetTextColor(Color.ParseColor("#000000"));
+                        btnTales.Id = i;
+
+                        btnDelete = new Button(this);
+                        btnDelete.Text = "Eliminar";
+                        btnDelete.SetPadding(20, 20, 20, 20);
+                        btnDelete.SetTextSize(Android.Util.ComplexUnitType.Sp, 18);
+                        btnDelete.SetTypeface(null, TypefaceStyle.Bold);
+                        btnTales.SetTextColor(Color.ParseColor("#000000"));
+                        btnDelete.Id = i;
+
+                        layoutH.AddView(btnTales);
+                        layoutH.AddView(btnDelete);
+                        layout.AddView(layoutH);
 
 
-                    //Asignamos propiedades del layout al layout
-                    layoutH.LayoutParameters = lp;
-                    //Añadimos el layout a la botonera
-                    llBotonera.AddView(layoutH);
+                        btnTales.Click += BtnTales_Click;
+                        btnDelete.Click += BtnDelete_Click;
+                    }
 
-                    btnTales.Click += BtnTales_Click;
-                    btnDelete.Click += BtnDelete_Click;
+                    SetContentView(layout);
+
                 }
+                else
+                {
+                    SetContentView(Resource.Layout.preloadTale);
+
+                    //Obtenemos el linear layout donde colocar los botones
+                    LinearLayout llBotonera = FindViewById<LinearLayout>(Resource.Id.llBotonera2);
+                    //llBotonera.SetBackgroundColor(Color.AntiqueWhite);
+                    llBotonera.SetGravity(GravityFlags.Center);
+
+                    //Creamos las propiedades de layout que tendrán los botones.
+                    //Son LinearLayout.LayoutParams porque los botones van a estar en un LinearLayout.
+                    LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+                    lp.SetMargins(5, 5, 5, 5);
+                    lp.Gravity = GravityFlags.CenterVertical;
+
+                    for (int i = 0; i < items.Count; i++)
+                    {
+                        var layoutH = new LinearLayout(this);
+                        layoutH.SetGravity(GravityFlags.Center);
+                        layoutH.SetBackgroundColor(Color.ParseColor("#fffff0"));
+
+                        btnTales = new Button(this);
+                        string nameArchiveAbsolutePath = items[i];
+                        nameArchiveClick = UtilsAndroid.ChangeToRelativePath(nameArchiveAbsolutePath);
+                        btnTales.Text = nameArchiveClick;
+                        btnTales.SetPadding(20, 20, 20, 20);
+                        btnTales.SetTextSize(Android.Util.ComplexUnitType.Sp, 18);
+                        btnTales.SetTypeface(null, TypefaceStyle.Bold);
+                        btnTales.SetTextColor(Color.ParseColor("#000000"));
+                        btnTales.Id = i;
+
+                        btnDelete = new Button(this);
+                        btnDelete.Text = "Eliminar";
+                        btnDelete.SetPadding(20, 20, 20, 20);
+                        btnDelete.SetTextSize(Android.Util.ComplexUnitType.Sp, 18);
+                        btnDelete.SetTypeface(null, TypefaceStyle.Bold);
+                        btnTales.SetTextColor(Color.ParseColor("#000000"));
+                        btnDelete.Id = i;
+
+                        layoutH.AddView(btnTales);
+                        layoutH.AddView(btnDelete);
+
+
+                        //Asignamos propiedades del layout al layout
+                        layoutH.LayoutParameters = lp;
+                        //Añadimos el layout a la botonera
+                        llBotonera.AddView(layoutH);
+
+                        btnTales.Click += BtnTales_Click;
+                        btnDelete.Click += BtnDelete_Click;
+                    }
+
+                }
+
 
             }
             else
