@@ -2711,20 +2711,23 @@ namespace TaleVisualicer
 			// aapt resource value: 0x7f0b0099
 			public const int llBotonera = 2131427481;
 			
+			// aapt resource value: 0x7f0b00dd
+			public const int llBotonera2 = 2131427549;
+			
 			// aapt resource value: 0x7f0b00a0
 			public const int lnr = 2131427488;
 			
 			// aapt resource value: 0x7f0b00c2
 			public const int lnrLytNavigation = 2131427522;
 			
-			// aapt resource value: 0x7f0b00df
-			public const int masked = 2131427551;
+			// aapt resource value: 0x7f0b00e0
+			public const int masked = 2131427552;
 			
 			// aapt resource value: 0x7f0b00d0
 			public const int media_actions = 2131427536;
 			
-			// aapt resource value: 0x7f0b00dd
-			public const int message = 2131427549;
+			// aapt resource value: 0x7f0b00de
+			public const int message = 2131427550;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int middle = 2131427377;
@@ -3005,8 +3008,8 @@ namespace TaleVisualicer
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00de
-			public const int visible = 2131427550;
+			// aapt resource value: 0x7f0b00df
+			public const int visible = 2131427551;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int withText = 2131427388;
@@ -3248,19 +3251,22 @@ namespace TaleVisualicer
 			public const int notification_template_part_time = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int select_dialog_item_material = 2130968634;
+			public const int preloadTale = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int select_dialog_multichoice_material = 2130968635;
+			public const int select_dialog_item_material = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int select_dialog_singlechoice_material = 2130968636;
+			public const int select_dialog_multichoice_material = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int support_simple_spinner_dropdown_item = 2130968637;
+			public const int select_dialog_singlechoice_material = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int tooltip = 2130968638;
+			public const int support_simple_spinner_dropdown_item = 2130968638;
+			
+			// aapt resource value: 0x7f04003f
+			public const int tooltip = 2130968639;
 			
 			static Layout()
 			{

@@ -38,11 +38,25 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
          
             items = JsonConvert.DeserializeObject<List<string>>(Intent.GetStringExtra("dir"));
 
+            //Establecemos el layout main
+            SetContentView(Resource.Layout.preloadTale);
+
             if (items.Count() != 0)
             {
-                var layout = new LinearLayout(this);
-                layout.Orientation = Orientation.Vertical;
-                layout.SetGravity(GravityFlags.Center);
+
+                //Obtenemos el linear layout donde colocar los botones
+                LinearLayout llBotonera = FindViewById<LinearLayout>(Resource.Id.llBotonera2);
+                //llBotonera.SetBackgroundColor(Color.AntiqueWhite);
+                llBotonera.SetGravity(GravityFlags.Center);
+
+
+                //Creamos las propiedades de layout que tendrán los botones.
+                //Son LinearLayout.LayoutParams porque los botones van a estar en un LinearLayout.
+                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+                lp.SetMargins(5, 5, 5, 5);
+                lp.Gravity = GravityFlags.CenterVertical;
+
+
 
                 for (int i = 0; i < items.Count; i++)
                 {
@@ -70,13 +84,16 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
 
                     layoutH.AddView(btnTales);
                     layoutH.AddView(btnDelete);
-                    layout.AddView(layoutH);
-                    
+
+
+                    //Asignamos propiedades del layout al layout
+                    layoutH.LayoutParameters = lp;
+                    //Añadimos el layout a la botonera
+                    llBotonera.AddView(layoutH);
+
                     btnTales.Click += BtnTales_Click;
                     btnDelete.Click += BtnDelete_Click;
                 }
-
-                SetContentView(layout);
 
             }
             else
