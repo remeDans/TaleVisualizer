@@ -16,7 +16,7 @@ using Newtonsoft.Json;
 using Android;
 using static Android.Views.ViewGroup;
 
-namespace TaleVisualicer
+namespace TaleVisualizer
 {
 
     [Activity(Label = "ActivityPreloadTale", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,

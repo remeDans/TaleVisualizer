@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 using Android;
 
 
-namespace TaleVisualicer
+namespace TaleVisualizer
 {
     [Activity(Label = "ListTale", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
     ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]

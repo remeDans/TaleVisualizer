@@ -6,7 +6,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Util;
 
-namespace TaleVisualicer
+namespace TaleVisualizer
 {
     [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
 ScreenOrientation = ScreenOrientation.Landscape, Icon = "@mipmap/icon")]

@@ -8,10 +8,10 @@ using Newtonsoft.Json;
 using Android.Content;
 using Android.Support.V7.App;
 using Android.Gms.Ads;
-using TaleVisualicer;
+using TaleVisualizer;
 using System;
 
-namespace TaleVisualicer
+namespace TaleVisualizer
 {
 
     [Activity(Label = "ApplicationName",  ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,

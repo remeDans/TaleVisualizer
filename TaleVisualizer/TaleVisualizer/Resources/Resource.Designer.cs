@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("TaleVisualicer.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("TaleVisualizer.Resource", IsApplication=true)]
 
-namespace TaleVisualicer
+namespace TaleVisualizer
 {
 	
 	

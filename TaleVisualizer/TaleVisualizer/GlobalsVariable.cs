@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 
 
-namespace TaleVisualicer
+namespace TaleVisualizer
 {
 
     /*[Application(Debuggable = true)]*/

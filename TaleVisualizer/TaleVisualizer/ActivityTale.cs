@@ -19,7 +19,7 @@ using Android.Widget;
 using Newtonsoft.Json;
 using TestingEditor;
 
-namespace TaleVisualicer
+namespace TaleVisualizer
 {
     [Activity(Label = "ActivityTale", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
 ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", NoHistory = true)]

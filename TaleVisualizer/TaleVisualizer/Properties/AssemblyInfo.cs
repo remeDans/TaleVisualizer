@@ -6,11 +6,11 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TaleVisualicer")]
+[assembly: AssemblyTitle("TaleVisualizer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("dansca_entertainment")]
-[assembly: AssemblyProduct("TaleVisualicer")]
+[assembly: AssemblyProduct("TaleVisualizer")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using Android.App;
     Icon = "@mipmap/icon"/*,
         Debuggable = true,
         Label = "insert label here",
-        ManageSpaceActivity = typeof(TaleVisualicer.GlobalsVariable)*/)]
+        ManageSpaceActivity = typeof(TaleVisualizer.GlobalsVariable)*/)]
 
 // Version information for an assembly consists of the following four values:
 //
