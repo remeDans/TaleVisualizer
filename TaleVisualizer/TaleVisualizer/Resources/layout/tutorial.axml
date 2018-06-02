@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/lblTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textSize="20dp"
+        android:text="Los cuentos se pueden conseguir de dos formas:" />
+    <TextView
+        android:id="@+id/lblTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:textSize="18dp"
+        android:text="1.  Bajandolos de la siguiente direccion taleeditor.wordpress.com (Cuentos que han hecho otras personas)" />
+    <TextView
+        android:id="@+id/lblTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:textSize="18dp"
+        android:text="2.  Realizarlos con el programa TaleEditor que se encuentra en la misma web" />
+    <TextView
+        android:id="@+id/lblTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textSize="16dp"
+        android:text="*Los cuentos se tienen que guardar en la carpeta 'Download' " />
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No volver a preguntar"
+        android:layout_gravity="right"
+        android:paddingRight="10dp" />
+    <Button
+        android:id="@+id/btnPrueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnPrueba"
+        android:text="Aceptar"
+        android:layout_gravity="right"
+        android:paddingRight="10dp" />
+</LinearLayout>

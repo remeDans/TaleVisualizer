@@ -2492,6 +2492,9 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b00c3
 			public const int btnPreviousPage = 2131427523;
 			
+			// aapt resource value: 0x7f0b00e0
+			public const int btnPrueba = 2131427552;
+			
 			// aapt resource value: 0x7f0b0063
 			public const int buttonPanel = 2131427427;
 			
@@ -2693,6 +2696,9 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b009d
 			public const int lblFrontPage = 2131427485;
 			
+			// aapt resource value: 0x7f0b00df
+			public const int lblTutorial = 2131427551;
+			
 			// aapt resource value: 0x7f0b0049
 			public const int left = 2131427401;
 			
@@ -2720,8 +2726,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b00c2
 			public const int lnrLytNavigation = 2131427522;
 			
-			// aapt resource value: 0x7f0b00e0
-			public const int masked = 2131427552;
+			// aapt resource value: 0x7f0b00e2
+			public const int masked = 2131427554;
 			
 			// aapt resource value: 0x7f0b00d0
 			public const int media_actions = 2131427536;
@@ -3008,8 +3014,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00df
-			public const int visible = 2131427551;
+			// aapt resource value: 0x7f0b00e1
+			public const int visible = 2131427553;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int withText = 2131427388;
@@ -3267,6 +3273,9 @@ namespace TaleVisualizer
 			
 			// aapt resource value: 0x7f04003f
 			public const int tooltip = 2130968639;
+			
+			// aapt resource value: 0x7f040040
+			public const int tutorial = 2130968640;
 			
 			static Layout()
 			{

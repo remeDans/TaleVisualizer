@@ -138,6 +138,7 @@
     <Compile Include="TaleEditor\SortedSetFilledException.cs" />
     <Compile Include="TaleEditor\Tale.cs" />
     <Compile Include="TaleEditor\TaleManager.cs" />
+    <Compile Include="TutorialActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -204,6 +205,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\preloadTale.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\tutorial.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

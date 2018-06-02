@@ -26,19 +26,19 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
 
         public bool startApp;
         int countMainActivity;
-        public String m;
+        bool m;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
-
-            countMainActivity = 0;
-
             this.RequestedOrientation = ScreenOrientation.Landscape;
+
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
 
             //------- ADS ----------------
             mAdView = FindViewById<AdView>(Resource.Id.adView);
@@ -50,6 +50,7 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
 
             imgAdd = FindViewById<ImageButton>(Resource.Id.imgAddTales);
             imgPreloadTale = FindViewById<ImageButton>(Resource.Id.imgPreloadTale);
+            
 
             imgAdd.Click += ImgAdd_Click;
             imgPreloadTale.Click += ImgPreloadTale_Click;
@@ -58,17 +59,19 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             // VARIABLES GLOBALES
             //-------------------
 
-            if(GlobalsVariable.count== 0)
+            /*if (GetDefaultSharedPreferences.count == 0)
             {
+
                 Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
                 alert.SetTitle("Tutorial");
                 alert.SetMessage("Los cuentos se encuentran en taleeditor.wordpress.com y se tienen que guardar en la carpeta 'Downloads' ");
                 alert.Show();
+
             }
 
-            GlobalsVariable.count++;
-        }
+            GetDefaultSharedPreferences.count++;*/
 
+        }
 
         private void ImgPreloadTale_Click(object sender, System.EventArgs e)
         {

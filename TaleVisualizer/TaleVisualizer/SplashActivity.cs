@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -12,6 +13,7 @@ namespace TaleVisualizer
 ScreenOrientation = ScreenOrientation.Landscape, Icon = "@mipmap/icon")]
     public class SplashActivity : AppCompatActivity
     {
+
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
             base.OnCreate(savedInstanceState, persistentState);
@@ -35,8 +37,19 @@ ScreenOrientation = ScreenOrientation.Landscape, Icon = "@mipmap/icon")]
         {
             await Task.Delay(2000); // Simulate a bit of startup work.
 
-            StartActivity(new Intent(Application.Context, typeof (MainActivity)));
+            Boolean bandActivity = GetDefaultSharedPreferences.pref.GetBoolean("mostrarTutorial", true);
+            if (bandActivity)
+            {
+                //No saved tutorial
+                Intent intent = new Intent(this, typeof(TutorialActivity));
+                this.StartActivity(intent);
+            }
 
+            else
+            {
+                Intent intent = new Intent(this, typeof(MainActivity));
+                this.StartActivity(intent);
+            }
 
         }
     }

@@ -6,6 +6,7 @@ using System.Text;
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Preferences;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -14,29 +15,12 @@ using Android.Widget;
 namespace TaleVisualizer
 {
 
-    /*[Application(Debuggable = true)]*/
-    public static class GlobalsVariable //: Application
+
+    public static class GetDefaultSharedPreferences
     {
-      
-
-        /*public GlobalsVariable(IntPtr handle, JniHandleOwnership transfer)
-                    : base(handle, transfer)
-        {
-        }
-        public override void OnCreate()
-        {
-            myString = "Hello World";
-            base.OnCreate();
-
-        }*/
-
         public static int count = 0;
+        public static Boolean mostrarTutorial = true;
 
-
-
-       
-
-
-
+        public static ISharedPreferences pref = Application.Context.GetSharedPreferences("Info", FileCreationMode.Private);
     }
 }
