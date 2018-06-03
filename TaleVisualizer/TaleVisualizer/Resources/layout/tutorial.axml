@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="No volver a preguntar"
         android:layout_gravity="right"
-        android:paddingRight="10dp" />
+        android:paddingRight="20dp" />
     <Button
         android:id="@+id/btnPrueba"
         android:layout_width="wrap_content"
@@ -49,5 +49,5 @@
         android:onClick="btnPrueba"
         android:text="Aceptar"
         android:layout_gravity="right"
-        android:paddingRight="10dp" />
+        android:layout_marginRight="20dp" />
 </LinearLayout>
