@@ -160,37 +160,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             lnrLytNavigation.Visibility = ViewStates.Visible;
         }
 
-        #region opciones_inicio
-        /*private void visibilityListener(object sender, Android.Views.View.SystemUiVisibilityChangeEventArgs e)
-        {
-            var newUiOptions = (int)e.Visibility;
-            newUiOptions |= (int)SystemUiFlags.LayoutStable;
-            newUiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
-            newUiOptions |= (int)SystemUiFlags.LayoutFullscreen;
-            newUiOptions |= (int)SystemUiFlags.HideNavigation;
-            newUiOptions |= (int)SystemUiFlags.Fullscreen;
-            newUiOptions |= (int)SystemUiFlags.ImmersiveSticky;
-
-            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)newUiOptions;
-        }
-        public override void OnWindowFocusChanged(bool hasFocus)
-        {
-            base.OnWindowFocusChanged(hasFocus);
-
-            int uiOptions = (int)Window.DecorView.SystemUiVisibility;
-
-            Window.SetFlags(WindowManagerFlags.Fullscreen, WindowManagerFlags.Fullscreen);
-
-            uiOptions |= (int)SystemUiFlags.LayoutStable;
-            uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
-            uiOptions |= (int)SystemUiFlags.LayoutFullscreen;
-            uiOptions |= (int)SystemUiFlags.HideNavigation;
-            uiOptions |= (int)SystemUiFlags.Fullscreen;
-            uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
-
-            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
-        }*/
-        #endregion opciones_inicio
 
         #region Navigation
 
@@ -212,16 +181,9 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
 
         private void UpdateGUI()
         {
-            if (taleManager == null)
-            {
-                //menuCloseTale.IsEnabled = false;
-                //ShowStartInterface();
-            }
 
             if (taleManager != null)
             {
-                //menuCloseTale.IsEnabled = true;
-
                 if (taleManager.CurrentPageIndex == -1)
                 {
                     UpdateTaleAndroidGUI();
@@ -243,22 +205,14 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             {
                 if (hasFinishedOrStopped)
                 {
-                    //btnPlay.IsEnabled = true;
-                    //btnStop.IsEnabled = false;
-
                     if (taleManager.CurrentPageIndex == -1)
                     {
-                        //btnGoToFrontPage.IsEnabled = false;
-                        //btnGoToEndPage.IsEnabled = true;
-
                         btnPreviousPage.Enabled = false;
                         btnNextPage.Enabled = true;
 
                         if (taleManager.NumberOfPages == 0)
                         {
-                            //btnGoToFrontPage.IsEnabled = false;
                             btnPreviousPage.Enabled = false;
-                            //btnGoToEndPage.IsEnabled = false;
                             btnNextPage.Enabled = false;
                         }
                     }
@@ -266,27 +220,15 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
                     {
                         if (taleManager.CurrentPageIndex >= 0 && taleManager.CurrentPageIndex < taleManager.NumberOfPages - 1)
                         {
-                            //btnGoToFrontPage.IsEnabled = true;
                             btnPreviousPage.Enabled = true;
-                            //btnGoToEndPage.IsEnabled = true;
                             btnNextPage.Enabled = true;
                         }
                         else
                         {
-                            //btnGoToFrontPage.IsEnabled = true;
                             btnPreviousPage.Enabled = true;
-                            //btnGoToEndPage.IsEnabled = false;
                             btnNextPage.Enabled = false;
-
-                            //btnPlay.IsEnabled = true;
-                            //btnStop.IsEnabled = false;
                         }
                     }
-                }
-                else
-                {
-                    /*btnPlay.IsEnabled = false;
-                    btnStop.IsEnabled = true;*/
                 }
             }
         }

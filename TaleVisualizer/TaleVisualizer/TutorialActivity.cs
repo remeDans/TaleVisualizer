@@ -8,7 +8,7 @@ using Android.Widget;
 namespace TaleVisualizer
 {
     [Activity(Label = "Tutorial", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
-ScreenOrientation = ScreenOrientation.Landscape)]//Theme = "@style/MyTheme.Base"
+ScreenOrientation = ScreenOrientation.Landscape)]
     public class TutorialActivity : Activity
     {
         CheckBox check;
