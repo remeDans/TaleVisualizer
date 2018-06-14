@@ -85,8 +85,7 @@
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="30dp">
-                </TableRow>
+                    android:minHeight="30dp" />
                 <TableRow
                     android:id="@+id/Cabecera"
                     android:layout_width="fill_parent"
@@ -241,8 +240,7 @@
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="40dp">
-                </TableRow>
+                    android:minHeight="40dp" />
                 <TableRow
                     android:id="@+id/Cabecera"
                     android:layout_width="fill_parent"
@@ -401,8 +399,7 @@
                     android:id="@+id/Cabeceravj"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="30dp">
-                </TableRow>
+                    android:minHeight="30dp" />
             </TableLayout>
         </LinearLayout>
     </FrameLayout>

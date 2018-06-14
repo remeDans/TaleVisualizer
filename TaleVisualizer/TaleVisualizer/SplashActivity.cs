@@ -13,7 +13,6 @@ namespace TaleVisualizer
 ScreenOrientation = ScreenOrientation.Landscape, Icon = "@mipmap/icon")]
     public class SplashActivity : AppCompatActivity
     {
-
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
             base.OnCreate(savedInstanceState, persistentState);

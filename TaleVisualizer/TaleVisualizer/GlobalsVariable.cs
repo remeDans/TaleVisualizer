@@ -18,7 +18,6 @@ namespace TaleVisualizer
 
     public static class GetDefaultSharedPreferences
     { 
-
         public static ISharedPreferences pref = Application.Context.GetSharedPreferences("Info", FileCreationMode.Private);
     }
 }

@@ -137,8 +137,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
                     }
 
                 }
-
-
             }
             else
             {
@@ -185,10 +183,7 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base")]
             string nameArchiveAbsolutePath = ((Button)sender).Text;
             string nameArchive = UtilsAndroid.ChangeToRelativePath(nameArchiveAbsolutePath);
 
-            //pathTale = Android.OS.Environment.ExternalStorageDirectory + "/Download" + "/VS" + "/" + nameArchive;
             pathTale = this.ApplicationInfo.DataDir + "/files" + "/VS" + "/" + nameArchive;
-
-            
 
             var intent = new Intent(this, typeof(ActivityTale));
             intent.PutExtra("path", JsonConvert.SerializeObject(pathTale));

@@ -2348,11 +2348,11 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0033
 			public const int CTRL = 2131427379;
 			
-			// aapt resource value: 0x7f0b00a3
-			public const int Cabecera = 2131427491;
-			
 			// aapt resource value: 0x7f0b00a2
-			public const int Cabeceravj = 2131427490;
+			public const int Cabecera = 2131427490;
+			
+			// aapt resource value: 0x7f0b00a1
+			public const int Cabeceravj = 2131427489;
 			
 			// aapt resource value: 0x7f0b0034
 			public const int FUNCTION = 2131427380;
@@ -2366,8 +2366,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0037
 			public const int SYM = 2131427383;
 			
-			// aapt resource value: 0x7f0b00cd
-			public const int action0 = 2131427533;
+			// aapt resource value: 0x7f0b00ce
+			public const int action0 = 2131427534;
 			
 			// aapt resource value: 0x7f0b007c
 			public const int action_bar = 2131427452;
@@ -2390,17 +2390,17 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b005a
 			public const int action_bar_title = 2131427418;
 			
-			// aapt resource value: 0x7f0b00ca
-			public const int action_container = 2131427530;
+			// aapt resource value: 0x7f0b00cb
+			public const int action_container = 2131427531;
 			
 			// aapt resource value: 0x7f0b007d
 			public const int action_context_bar = 2131427453;
 			
-			// aapt resource value: 0x7f0b00d1
-			public const int action_divider = 2131427537;
+			// aapt resource value: 0x7f0b00d2
+			public const int action_divider = 2131427538;
 			
-			// aapt resource value: 0x7f0b00cb
-			public const int action_image = 2131427531;
+			// aapt resource value: 0x7f0b00cc
+			public const int action_image = 2131427532;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -2417,17 +2417,17 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b005c
 			public const int action_mode_close_button = 2131427420;
 			
-			// aapt resource value: 0x7f0b00cc
-			public const int action_text = 2131427532;
+			// aapt resource value: 0x7f0b00cd
+			public const int action_text = 2131427533;
 			
-			// aapt resource value: 0x7f0b00da
-			public const int actions = 2131427546;
+			// aapt resource value: 0x7f0b00db
+			public const int actions = 2131427547;
 			
 			// aapt resource value: 0x7f0b005d
 			public const int activity_chooser_view_content = 2131427421;
 			
-			// aapt resource value: 0x7f0b00c9
-			public const int adView = 2131427529;
+			// aapt resource value: 0x7f0b00ca
+			public const int adView = 2131427530;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int add = 2131427367;
@@ -2456,50 +2456,50 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b003d
 			public const int bottom = 2131427389;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int brdPic1 = 2131427492;
+			// aapt resource value: 0x7f0b00a3
+			public const int brdPic1 = 2131427491;
 			
-			// aapt resource value: 0x7f0b00bb
-			public const int brdPic10 = 2131427515;
+			// aapt resource value: 0x7f0b00ba
+			public const int brdPic10 = 2131427514;
 			
-			// aapt resource value: 0x7f0b00a6
-			public const int brdPic2 = 2131427494;
+			// aapt resource value: 0x7f0b00a5
+			public const int brdPic2 = 2131427493;
 			
-			// aapt resource value: 0x7f0b00a8
-			public const int brdPic3 = 2131427496;
+			// aapt resource value: 0x7f0b00a7
+			public const int brdPic3 = 2131427495;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int brdPic4 = 2131427498;
+			// aapt resource value: 0x7f0b00a9
+			public const int brdPic4 = 2131427497;
 			
-			// aapt resource value: 0x7f0b00ac
-			public const int brdPic5 = 2131427500;
+			// aapt resource value: 0x7f0b00ab
+			public const int brdPic5 = 2131427499;
 			
-			// aapt resource value: 0x7f0b00b3
-			public const int brdPic6 = 2131427507;
+			// aapt resource value: 0x7f0b00b2
+			public const int brdPic6 = 2131427506;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int brdPic7 = 2131427509;
+			// aapt resource value: 0x7f0b00b4
+			public const int brdPic7 = 2131427508;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int brdPic8 = 2131427511;
+			// aapt resource value: 0x7f0b00b6
+			public const int brdPic8 = 2131427510;
 			
-			// aapt resource value: 0x7f0b00b9
-			public const int brdPic9 = 2131427513;
-			
-			// aapt resource value: 0x7f0b00c4
-			public const int btnNextPage = 2131427524;
+			// aapt resource value: 0x7f0b00b8
+			public const int brdPic9 = 2131427512;
 			
 			// aapt resource value: 0x7f0b00c3
-			public const int btnPreviousPage = 2131427523;
+			public const int btnNextPage = 2131427523;
 			
-			// aapt resource value: 0x7f0b00e0
-			public const int btnPrueba = 2131427552;
+			// aapt resource value: 0x7f0b00c2
+			public const int btnPreviousPage = 2131427522;
+			
+			// aapt resource value: 0x7f0b00e1
+			public const int btnPrueba = 2131427553;
 			
 			// aapt resource value: 0x7f0b0063
 			public const int buttonPanel = 2131427427;
 			
-			// aapt resource value: 0x7f0b00ce
-			public const int cancel_action = 2131427534;
+			// aapt resource value: 0x7f0b00cf
+			public const int cancel_action = 2131427535;
 			
 			// aapt resource value: 0x7f0b0045
 			public const int center = 2131427397;
@@ -2513,8 +2513,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0073
 			public const int checkbox = 2131427443;
 			
-			// aapt resource value: 0x7f0b00d6
-			public const int chronometer = 2131427542;
+			// aapt resource value: 0x7f0b00d7
+			public const int chronometer = 2131427543;
 			
 			// aapt resource value: 0x7f0b004e
 			public const int clip_horizontal = 2131427406;
@@ -2570,8 +2570,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0030
 			public const int end = 2131427376;
 			
-			// aapt resource value: 0x7f0b00dc
-			public const int end_padder = 2131427548;
+			// aapt resource value: 0x7f0b00dd
+			public const int end_padder = 2131427549;
 			
 			// aapt resource value: 0x7f0b003f
 			public const int enterAlways = 2131427391;
@@ -2603,11 +2603,11 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0058
 			public const int forever = 2131427416;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int frmLytFrontPage = 2131427483;
+			// aapt resource value: 0x7f0b009a
+			public const int frmLytFrontPage = 2131427482;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int frmLytPage = 2131427486;
+			// aapt resource value: 0x7f0b009d
+			public const int frmLytPage = 2131427485;
 			
 			// aapt resource value: 0x7f0b00c5
 			public const int frmLytStart = 2131427525;
@@ -2615,8 +2615,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b000a
 			public const int ghost_view = 2131427338;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int gridView2 = 2131427482;
+			// aapt resource value: 0x7f0b00c4
+			public const int gridView2 = 2131427524;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int home = 2131427333;
@@ -2627,8 +2627,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0062
 			public const int icon = 2131427426;
 			
-			// aapt resource value: 0x7f0b00db
-			public const int icon_group = 2131427547;
+			// aapt resource value: 0x7f0b00dc
+			public const int icon_group = 2131427548;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int ifRoom = 2131427386;
@@ -2636,50 +2636,50 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b005f
 			public const int image = 2131427423;
 			
-			// aapt resource value: 0x7f0b00c8
-			public const int imgAddTales = 2131427528;
+			// aapt resource value: 0x7f0b00c9
+			public const int imgAddTales = 2131427529;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int imgBackgroundFrontPage = 2131427484;
+			// aapt resource value: 0x7f0b009b
+			public const int imgBackgroundFrontPage = 2131427483;
 			
-			// aapt resource value: 0x7f0b009f
-			public const int imgBackgroundPage = 2131427487;
+			// aapt resource value: 0x7f0b009e
+			public const int imgBackgroundPage = 2131427486;
 			
-			// aapt resource value: 0x7f0b00a5
-			public const int imgPic1 = 2131427493;
+			// aapt resource value: 0x7f0b00a4
+			public const int imgPic1 = 2131427492;
 			
-			// aapt resource value: 0x7f0b00bc
-			public const int imgPic10 = 2131427516;
+			// aapt resource value: 0x7f0b00bb
+			public const int imgPic10 = 2131427515;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int imgPic2 = 2131427495;
+			// aapt resource value: 0x7f0b00a6
+			public const int imgPic2 = 2131427494;
 			
-			// aapt resource value: 0x7f0b00a9
-			public const int imgPic3 = 2131427497;
+			// aapt resource value: 0x7f0b00a8
+			public const int imgPic3 = 2131427496;
 			
-			// aapt resource value: 0x7f0b00ab
-			public const int imgPic4 = 2131427499;
+			// aapt resource value: 0x7f0b00aa
+			public const int imgPic4 = 2131427498;
 			
-			// aapt resource value: 0x7f0b00ad
-			public const int imgPic5 = 2131427501;
+			// aapt resource value: 0x7f0b00ac
+			public const int imgPic5 = 2131427500;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int imgPic6 = 2131427508;
+			// aapt resource value: 0x7f0b00b3
+			public const int imgPic6 = 2131427507;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int imgPic7 = 2131427510;
+			// aapt resource value: 0x7f0b00b5
+			public const int imgPic7 = 2131427509;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int imgPic8 = 2131427512;
+			// aapt resource value: 0x7f0b00b7
+			public const int imgPic8 = 2131427511;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int imgPic9 = 2131427514;
+			// aapt resource value: 0x7f0b00b9
+			public const int imgPic9 = 2131427513;
 			
 			// aapt resource value: 0x7f0b00c6
 			public const int imgPreloadTale = 2131427526;
 			
-			// aapt resource value: 0x7f0b00d7
-			public const int info = 2131427543;
+			// aapt resource value: 0x7f0b00d8
+			public const int info = 2131427544;
 			
 			// aapt resource value: 0x7f0b0059
 			public const int italic = 2131427417;
@@ -2690,14 +2690,17 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b008c
 			public const int largeLabel = 2131427468;
 			
+			// aapt resource value: 0x7f0b00c8
+			public const int lbl = 2131427528;
+			
+			// aapt resource value: 0x7f0b009c
+			public const int lblFrontPage = 2131427484;
+			
 			// aapt resource value: 0x7f0b00c7
-			public const int lbl = 2131427527;
+			public const int lblL = 2131427527;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int lblFrontPage = 2131427485;
-			
-			// aapt resource value: 0x7f0b00df
-			public const int lblTutorial = 2131427551;
+			// aapt resource value: 0x7f0b00e0
+			public const int lblTutorial = 2131427552;
 			
 			// aapt resource value: 0x7f0b0049
 			public const int left = 2131427401;
@@ -2717,23 +2720,23 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0099
 			public const int llBotonera = 2131427481;
 			
-			// aapt resource value: 0x7f0b00dd
-			public const int llBotonera2 = 2131427549;
-			
-			// aapt resource value: 0x7f0b00a0
-			public const int lnr = 2131427488;
-			
-			// aapt resource value: 0x7f0b00c2
-			public const int lnrLytNavigation = 2131427522;
-			
-			// aapt resource value: 0x7f0b00e2
-			public const int masked = 2131427554;
-			
-			// aapt resource value: 0x7f0b00d0
-			public const int media_actions = 2131427536;
-			
 			// aapt resource value: 0x7f0b00de
-			public const int message = 2131427550;
+			public const int llBotonera2 = 2131427550;
+			
+			// aapt resource value: 0x7f0b009f
+			public const int lnr = 2131427487;
+			
+			// aapt resource value: 0x7f0b00c1
+			public const int lnrLytNavigation = 2131427521;
+			
+			// aapt resource value: 0x7f0b00e3
+			public const int masked = 2131427555;
+			
+			// aapt resource value: 0x7f0b00d1
+			public const int media_actions = 2131427537;
+			
+			// aapt resource value: 0x7f0b00df
+			public const int message = 2131427551;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int middle = 2131427377;
@@ -2756,14 +2759,14 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b001e
 			public const int normal = 2131427358;
 			
-			// aapt resource value: 0x7f0b00d9
-			public const int notification_background = 2131427545;
+			// aapt resource value: 0x7f0b00da
+			public const int notification_background = 2131427546;
+			
+			// aapt resource value: 0x7f0b00d4
+			public const int notification_main_column = 2131427540;
 			
 			// aapt resource value: 0x7f0b00d3
-			public const int notification_main_column = 2131427539;
-			
-			// aapt resource value: 0x7f0b00d2
-			public const int notification_main_column_container = 2131427538;
+			public const int notification_main_column_container = 2131427539;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int parallax = 2131427404;
@@ -2789,11 +2792,11 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b004a
 			public const int right = 2131427402;
 			
-			// aapt resource value: 0x7f0b00d8
-			public const int right_icon = 2131427544;
+			// aapt resource value: 0x7f0b00d9
+			public const int right_icon = 2131427545;
 			
-			// aapt resource value: 0x7f0b00d4
-			public const int right_side = 2131427540;
+			// aapt resource value: 0x7f0b00d5
+			public const int right_side = 2131427541;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int save_image_matrix = 2131427340;
@@ -2897,8 +2900,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b004b
 			public const int start = 2131427403;
 			
-			// aapt resource value: 0x7f0b00cf
-			public const int status_bar_latest_event_content = 2131427535;
+			// aapt resource value: 0x7f0b00d0
+			public const int status_bar_latest_event_content = 2131427536;
 			
 			// aapt resource value: 0x7f0b0076
 			public const int submenuarrow = 2131427446;
@@ -2906,8 +2909,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0087
 			public const int submit_area = 2131427463;
 			
-			// aapt resource value: 0x7f0b00a1
-			public const int tLyt = 2131427489;
+			// aapt resource value: 0x7f0b00a0
+			public const int tLyt = 2131427488;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int tabMode = 2131427359;
@@ -2936,8 +2939,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0015
 			public const int textinput_error = 2131427349;
 			
-			// aapt resource value: 0x7f0b00d5
-			public const int time = 2131427541;
+			// aapt resource value: 0x7f0b00d6
+			public const int time = 2131427542;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int title = 2131427356;
@@ -2972,35 +2975,35 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0013
 			public const int transition_transform = 2131427347;
 			
-			// aapt resource value: 0x7f0b00ae
-			public const int txtWordPic1 = 2131427502;
-			
-			// aapt resource value: 0x7f0b00c1
-			public const int txtWordPic10 = 2131427521;
-			
-			// aapt resource value: 0x7f0b00af
-			public const int txtWordPic2 = 2131427503;
-			
-			// aapt resource value: 0x7f0b00b0
-			public const int txtWordPic3 = 2131427504;
-			
-			// aapt resource value: 0x7f0b00b1
-			public const int txtWordPic4 = 2131427505;
-			
-			// aapt resource value: 0x7f0b00b2
-			public const int txtWordPic5 = 2131427506;
-			
-			// aapt resource value: 0x7f0b00bd
-			public const int txtWordPic6 = 2131427517;
-			
-			// aapt resource value: 0x7f0b00be
-			public const int txtWordPic7 = 2131427518;
-			
-			// aapt resource value: 0x7f0b00bf
-			public const int txtWordPic8 = 2131427519;
+			// aapt resource value: 0x7f0b00ad
+			public const int txtWordPic1 = 2131427501;
 			
 			// aapt resource value: 0x7f0b00c0
-			public const int txtWordPic9 = 2131427520;
+			public const int txtWordPic10 = 2131427520;
+			
+			// aapt resource value: 0x7f0b00ae
+			public const int txtWordPic2 = 2131427502;
+			
+			// aapt resource value: 0x7f0b00af
+			public const int txtWordPic3 = 2131427503;
+			
+			// aapt resource value: 0x7f0b00b0
+			public const int txtWordPic4 = 2131427504;
+			
+			// aapt resource value: 0x7f0b00b1
+			public const int txtWordPic5 = 2131427505;
+			
+			// aapt resource value: 0x7f0b00bc
+			public const int txtWordPic6 = 2131427516;
+			
+			// aapt resource value: 0x7f0b00bd
+			public const int txtWordPic7 = 2131427517;
+			
+			// aapt resource value: 0x7f0b00be
+			public const int txtWordPic8 = 2131427518;
+			
+			// aapt resource value: 0x7f0b00bf
+			public const int txtWordPic9 = 2131427519;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int uniform = 2131427373;
@@ -3014,8 +3017,8 @@ namespace TaleVisualizer
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00e1
-			public const int visible = 2131427553;
+			// aapt resource value: 0x7f0b00e2
+			public const int visible = 2131427554;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int withText = 2131427388;

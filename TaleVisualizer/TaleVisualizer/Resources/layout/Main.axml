@@ -21,11 +21,22 @@
             android:layout_height="match_parent"
             android:background="@android:color/holo_blue_light" />
         <TextView
+            android:id="@+id/lblL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingTop="2dp"
+            android:paddingLeft="2dp"
+            android:text="Version 1.0"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+        <TextView
             android:id="@+id/lbl"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center"
-            android:paddingTop="30dp"
+            android:paddingTop="24dp"
             android:text="CUENTOS PRECARGADOS"
             android:textStyle="bold"
             android:textColor="#ffffff"

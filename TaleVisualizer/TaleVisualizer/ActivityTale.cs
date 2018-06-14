@@ -120,7 +120,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
             pathTale = JsonConvert.DeserializeObject<string>(Intent.GetStringExtra("path"));
         
             GetXml(pathTale + "/index.xml");
-            //ChangeToAbsolutePathAndroid(pathTale+ "/");
             ChangeToAbsolutePathAndroid2(pathTale + "/");
             UpdateGUI();
         }
@@ -440,43 +439,6 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
         }
 
 
-        private void ChangeToAbsolutePathAndroid(String location)
-        {
-            //cuento
-            if (taleManager.Background != "" && UtilsAndroid.isArchive(taleManager.Background))
-            {
-                taleManager.Background = location + taleManager.Background;
-            }
-            if (taleManager.Music != "" && UtilsAndroid.isArchive(taleManager.Music))
-            {
-                taleManager.Music = location + taleManager.Music;
-            }
-            //páginas
-            foreach (Page page in taleManager.GetPages)
-            {
-                int numPage = page.Index + 1;
-                if (page.Background != "" && UtilsAndroid.isArchive(page.Background))
-                {
-                    page.Background = location + page.Background;
-                }
-                if (page.Music != "" && UtilsAndroid.isArchive(page.Music))
-                {
-                    page.Music = location + page.Music;
-                }
-
-                foreach (Pictogram picto in page.Pictograms)
-                {
-                    if (picto.ImageName != "" && UtilsAndroid.isArchive(picto.ImageName))
-                    {
-                        picto.ImageName = location + picto.ImageName;
-                    }
-                    if (picto.Sound != "" && UtilsAndroid.isArchive(picto.Sound))
-                    {
-                        picto.Sound = location + picto.Sound;
-                    }
-                }
-            }
-        }
 
         #region LogStoreAndroid
 

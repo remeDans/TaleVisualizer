@@ -49,12 +49,10 @@ ScreenOrientation = ScreenOrientation.Landscape, Theme = "@style/MyTheme.Base", 
 
             imgAdd.Click += ImgAdd_Click;
             imgPreloadTale.Click += ImgPreloadTale_Click;
-
         }
 
         private void ImgPreloadTale_Click(object sender, System.EventArgs e)
         {
-            //string documentsPath = Android.OS.Environment.ExternalStorageDirectory + "/Download" + "/VS";
             string documentsPath = this.ApplicationInfo.DataDir + "/files" + "/VS";
 
             if (Directory.Exists(documentsPath))

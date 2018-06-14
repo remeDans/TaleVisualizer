@@ -101,10 +101,6 @@ namespace TaleVisualizer
 
         private void BtnTales_Click(object sender, EventArgs e)
         {
-            //ESTE FUNCIONA PERFECTAMENTE
-            //loadTaleDownloadDownload(sender);
-
-            //ESTA HECHO PERO NO CONSIGO PONERLO EN LA PUBLICA MAS QUE NADA XK NO SE LA RUTA
             loadTaleDownloadData(sender);
         }
 
@@ -152,51 +148,6 @@ namespace TaleVisualizer
                 AlertDialog.Builder alert = new AlertDialog.Builder(this);
                 alert.SetTitle("Advertencia");
                 alert.SetMessage("Este cuento está precargado");
-                alert.Show();
-            }
-        }
-
-
-        public void loadTaleDownloadDownload(Object sender)
-        {
-            string nameArchiveAbsolutePath = ((Button)sender).Text;
-            string nameArchiveWithExtension = UtilsAndroid.ChangeToRelativePath(nameArchiveAbsolutePath);
-            int tamNnameArchiveWithExtension = nameArchiveWithExtension.Length;
-            string nameArchive = nameArchiveWithExtension.Substring(0, tamNnameArchiveWithExtension - 5);
-            string documentsPath = Android.OS.Environment.ExternalStorageDirectory + "/Download" + "/VS";
-
-            if (!Directory.Exists(documentsPath))
-            {
-                Directory.CreateDirectory(documentsPath);
-            }
-
-            if (!Directory.Exists(documentsPath + "/" + nameArchive))
-            {
-
-                File.Copy(nameArchiveAbsolutePath, System.IO.Path.Combine(documentsPath, nameArchiveWithExtension));
-                File.Copy(System.IO.Path.Combine(documentsPath, nameArchiveWithExtension), System.IO.Path.Combine(documentsPath, nameArchive + ".zip"));
-
-                pathTale = Android.OS.Environment.ExternalStorageDirectory + "/Download" + "/VS" + "/" + nameArchive;
-
-                if (!Directory.Exists(pathTale))
-                {
-                    Directory.CreateDirectory(pathTale);
-                }
-
-                FastZip zip = new FastZip();
-                zip.ExtractZip(System.IO.Path.Combine(documentsPath, nameArchive + ".zip"), pathTale, null);
-
-                File.Delete(System.IO.Path.Combine(documentsPath, nameArchiveWithExtension));
-                File.Delete(pathTale + ".zip");
-
-                var intent = new Intent(this, typeof(ActivityTale));
-                intent.PutExtra("path", JsonConvert.SerializeObject(pathTale));
-                StartActivity(intent);
-            }
-            else
-            {
-                AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                alert.SetTitle("Este cuento está precargado");
                 alert.Show();
             }
         }
