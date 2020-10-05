@@ -5,4 +5,5 @@ TaleVisualizer es un visualizador básico para android para cuentos creados con 
 * Navegación a través del cuento
 * Reproducción de sonidos
 
-La aplicación TaleEditor se encuentra en la siguiente dirección https://taleeditor.wordpress.com
+Para descargar la aplicación TaleEditor entra en la siguiente dirección https://taleeditor.wordpress.com
+Si quiere descargar esta dirección ponte en contacto conmigo a través del formulario de la web anterior.
